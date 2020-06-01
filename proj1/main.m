@@ -17,6 +17,24 @@ int main (int argc, const char * argv[])
         // NSLog는 간단히 인수를 표시하거나 로깅하는 Objective-C 라이브러리 함수다.
         NSLog(@"Programming is fun!");
         NSLog(@"Programming in Objective-C is even more fun!");
+        NSLog(@"Testing...\n..1\n...2\n....3");
+        
+        int sum; // 소수점이 없는 정수 값만 저장할 수 있다.
+        
+        sum = 50 + 25;
+        
+        // NSLog의 첫 인수는 화면에 드러날 문자열이다.
+        // %문자 바로 뒤에 나오는 문자는 그 지점에 표시될 값의 데이터 형을 지정한다.
+        NSLog(@"The sum of 50 and 25 is %i", sum);
+        
+        int value1, value2, otherSum;
+        
+        value1 = 50;
+        value2 = 25;
+        
+        otherSum = value1 + value2;
+        
+        NSLog(@"The sum of %i and %i is %i", value1, value2, otherSum);
     }
     // 프로그램이 정상 종료되었다는 의미.
     return 0;
